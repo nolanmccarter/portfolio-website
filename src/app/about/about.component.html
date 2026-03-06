@@ -1,35 +1,54 @@
-	<!-- About -->
-    <article id="about">
-        <div class="content">
-            <h1>About Me</h1>
-            <div class="inner">
-                <p>I am currently employed at Financial Information Technologies LLC, aka "Fintech" as a Technical Product Owner. I have been with the company since March 2023 and have quickly become confident in my Data Engineering skills.</p>
-                <p>I oversee collect, ingest, process, harmonize and publish across our data platform. This includes over 150 data collection points spanning depletion, shipment, inventory and invoice datatsets.</p>
-                <p>I am a Fall 2022 graduate from the University of Miami with a Bachelors of Science in Computer Science on the Data Science Track and a minor in Mathematics.</p>
-                <p>In 2021 and 2022 I worked as a Software Engineering summer intern at Thermo Fisher Scientific. This was a tremendous experience for me to gain first hand exposure to industry software development and apply my learnings from school to real world problems.</p>
-                <p>At the University of Miami I was involved in the Inter Fraternity Council as Vice President of Recruitment.</p>
-                <p>I also have experience as an AP Computer Science A Tutor in Java, and was an active member in my schools Data Analytics Student Association and Canes Fight Cancer Club.</p>
-                <p>Some of the things I enjoy outside work are collecting records, lifting, cooking, soccer, golf, skiing, traveling, and spending time with family and friends.</p>
-                <div class="photos">
-                    <div class="pic">
-                        <img src="assets/Family.JPG" alt="Family" heights=600 width=600/>
-                    </div>
-                    <div class="pic">
-                        <img src="assets/Golf.JPG" alt="Tough Mudder" heights=600 width=600/>
-                    </div>
-                    <div class="pic">
-                        <img src="assets/Ski.JPG" alt="Ski" heights=600 width=600/>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </article>
+<!-- About -->
+<div class="min-h-screen bg-slate-900 py-20 px-4">
+  <div class="max-w-5xl mx-auto">
 
-<!-- Footer -->
-<footer id="footer">
-    <div class="footer">
-        <h4>
-            Check out my previous<a routerLink="/work"> work</a>
-        </h4>
+    <!-- Section header -->
+    <div class="mb-14 text-center">
+      <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">About Me</h1>
+      <div class="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto rounded-full"></div>
     </div>
-</footer>
+
+    <!-- Bio -->
+    <div class="space-y-4 text-slate-300 text-lg leading-relaxed mb-16 max-w-3xl mx-auto">
+      <p>I am currently employed at Financial Information Technologies LLC, aka "Fintech" as a Technical Product Owner. I have been with the company since March 2023 and have quickly grown into a confident Data Engineering role.</p>
+      <p>I oversee collect, ingest, process, harmonize, and publish workflows across our data platform—including over 150 data collection points spanning depletion, shipment, inventory, and invoice datasets.</p>
+      <p>I am a Fall 2022 graduate from the University of Miami with a Bachelor of Science in Computer Science on the Data Science Track and a minor in Mathematics.</p>
+      <p>In 2021 and 2022 I worked as a Software Engineering summer intern at Thermo Fisher Scientific, gaining first-hand exposure to industry software development.</p>
+      <p>At the University of Miami I was Vice President of Recruitment for the Inter Fraternity Council, an AP Computer Science A Tutor in Java, and an active member of the Data Analytics Student Association.</p>
+      <p>Outside of work I enjoy collecting records, lifting, cooking, soccer, golf, skiing, traveling, and spending time with family and friends.</p>
+    </div>
+
+    <!-- Photo grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
+      <div class="group overflow-hidden rounded-xl border border-slate-700 hover:border-indigo-500/60 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/10">
+        <img src="assets/Family.JPG" alt="Family" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-3 bg-slate-800/60 text-center">
+          <p class="text-slate-400 text-sm">Family</p>
+        </div>
+      </div>
+      <div class="group overflow-hidden rounded-xl border border-slate-700 hover:border-indigo-500/60 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/10">
+        <img src="assets/Golf.JPG" alt="Golf" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-3 bg-slate-800/60 text-center">
+          <p class="text-slate-400 text-sm">Golf</p>
+        </div>
+      </div>
+      <div class="group overflow-hidden rounded-xl border border-slate-700 hover:border-indigo-500/60 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/10">
+        <img src="assets/Ski.JPG" alt="Skiing" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-3 bg-slate-800/60 text-center">
+          <p class="text-slate-400 text-sm">Skiing</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next link -->
+    <div class="text-center">
+      <a routerLink="/work" class="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors duration-200 font-medium">
+        Check out my work experience
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</div>

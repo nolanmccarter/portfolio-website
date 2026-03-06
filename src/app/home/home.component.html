@@ -1,24 +1,52 @@
-<!-- Header -->
-<header id="header">
-    <div class="content">
-        <h1>Welcome to Nolan McCarter's Website!</h1>
-        <div class="inner">
-            <p>Use the navigation bar to read about me, my work, education, and how to get in touch with me.</p>
-            <div class="headshot"><img src="assets/headshot.JPG" alt="Headshot"> </div>
-                <div class="text">
-                    <p>Technical Product Owner | Data Processing Engineer | Software Engineer | Computer Science Graduate at The University of Miami</p>
-                    <p>Currently employed as a Technical Product Owner at Fintech</p>
-                </div>
-        </div>
-    </div>
-</header>
+<!-- Hero Section -->
+<div class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 flex flex-col items-center justify-center px-4 py-24 relative overflow-hidden">
 
-<!-- Footer -->
-<footer id="footer">
-    <div class="footer">
-        <h4>
-            Here is the link to my resume:  
-            <a href="assets/Nolan_McCarter_Resume.pdf">click here.</a>
-        </h4>
-    </div>
-</footer>
+  <!-- Background decorative blobs -->
+  <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-600/10 rounded-full filter blur-3xl pointer-events-none"></div>
+  <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-purple-600/10 rounded-full filter blur-3xl pointer-events-none"></div>
+
+  <!-- Profile image -->
+  <div class="mb-8 relative">
+    <div class="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 blur-xl opacity-50 scale-110"></div>
+    <img
+      src="assets/headshot.JPG"
+      alt="Nolan McCarter"
+      class="relative w-40 h-40 rounded-full object-cover border-4 border-indigo-500/50 shadow-2xl"
+    >
+  </div>
+
+  <!-- Name -->
+  <h1 class="text-5xl sm:text-6xl font-bold text-white mb-4 text-center leading-tight">
+    Hi, I'm <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">Nolan McCarter</span>
+  </h1>
+
+  <!-- Tagline -->
+  <p class="text-xl text-slate-300 mb-2 text-center max-w-2xl">
+    Technical Product Owner &middot; Data Engineer &middot; Software Engineer
+  </p>
+  <p class="text-slate-400 mb-10 text-center">
+    University of Miami CS &rsquo;22 &middot; Currently at Fintech
+  </p>
+
+  <!-- CTA buttons -->
+  <div class="flex flex-wrap gap-4 justify-center mb-14">
+    <a routerLink="./about" class="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-7 py-3 rounded-lg transition-all duration-200 hover:shadow-lg hover:shadow-indigo-500/30 hover:-translate-y-0.5">
+      About Me
+    </a>
+    <a href="assets/Nolan_McCarter_Resume.pdf" target="_blank" class="border border-slate-600 hover:border-indigo-400 text-slate-300 hover:text-white font-semibold px-7 py-3 rounded-lg transition-all duration-200 hover:-translate-y-0.5">
+      View Resume
+    </a>
+  </div>
+
+  <!-- Tech stack pills -->
+  <div class="flex flex-wrap gap-2 justify-center max-w-xl">
+    <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-sm border border-slate-700 hover:border-indigo-500/50 transition-colors">Python</span>
+    <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-sm border border-slate-700 hover:border-indigo-500/50 transition-colors">SQL</span>
+    <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-sm border border-slate-700 hover:border-indigo-500/50 transition-colors">Airflow</span>
+    <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-sm border border-slate-700 hover:border-indigo-500/50 transition-colors">Snowflake</span>
+    <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-sm border border-slate-700 hover:border-indigo-500/50 transition-colors">Angular</span>
+    <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-sm border border-slate-700 hover:border-indigo-500/50 transition-colors">TypeScript</span>
+    <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-sm border border-slate-700 hover:border-indigo-500/50 transition-colors">Java</span>
+    <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-full text-sm border border-slate-700 hover:border-indigo-500/50 transition-colors">Agile</span>
+  </div>
+</div>

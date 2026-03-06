@@ -1,21 +1,22 @@
-<!-- nav -->
-<nav class="nav">
-    <ul>
-        <li class="nav-item"><a routerLink="./home">Home</a></li>
-        <li class="nav-item"><a routerLink="./about">About</a></li>
-        <li class="nav-item"><a routerLink="./work">Work</a></li>
-        <li class="nav-item"><a routerLink="./education">Education</a></li>
-        <li class="nav-item" style="float:right"><a routerLink="./contact">Contact</a></li>
-    </ul>
+<!-- Sticky glassmorphism navbar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-700/50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a routerLink="./home" class="text-white font-bold text-xl tracking-tight hover:text-indigo-400 transition-colors duration-200">
+        Nolan McCarter
+      </a>
+      <div class="flex items-center space-x-1">
+        <a routerLink="./home" class="text-slate-300 hover:text-white hover:bg-slate-700/60 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200">Home</a>
+        <a routerLink="./about" class="text-slate-300 hover:text-white hover:bg-slate-700/60 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200">About</a>
+        <a routerLink="./work" class="text-slate-300 hover:text-white hover:bg-slate-700/60 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200">Work</a>
+        <a routerLink="./education" class="text-slate-300 hover:text-white hover:bg-slate-700/60 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200">Education</a>
+        <a routerLink="./contact" class="ml-2 bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-md text-sm font-semibold transition-all duration-200 shadow-lg shadow-indigo-500/20">Contact</a>
+      </div>
+    </div>
+  </div>
 </nav>
 
- <!-- main content container -->
-<div class="jumbotron">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8 offset-sm-2">
-                <router-outlet></router-outlet>
-            </div>
-        </div>
-    </div>
+<!-- Main content -->
+<div class="pt-16 min-h-screen bg-slate-900">
+  <router-outlet></router-outlet>
 </div>
