@@ -1,22 +1,45 @@
-<!-- Sticky glassmorphism navbar -->
-<nav class="fixed top-0 w-full z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-700/50">
+<!-- Sticky wood-panel navbar with chrome venetian accent -->
+<nav class="fixed top-0 w-full z-50 wood-texture" style="background-color: #1E1D1C; border-bottom: 1px solid rgba(200,200,200,0.14);">
+  <!-- Venetian blind accent strip -->
+  <div class="venetian w-full opacity-50"></div>
+
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
-      <a routerLink="./home" class="text-white font-bold text-xl tracking-tight hover:text-indigo-400 transition-colors duration-200">
+    <div class="flex items-center justify-between h-14">
+      <!-- Logo: Playfair serif + gold shimmer -->
+      <a routerLink="./home" class="font-serif text-xl font-bold gold-text hover:opacity-80 transition-opacity duration-200">
         Nolan McCarter
       </a>
+
+      <!-- Nav links -->
       <div class="flex items-center space-x-1">
-        <a routerLink="./home" class="text-slate-300 hover:text-white hover:bg-slate-700/60 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200">Home</a>
-        <a routerLink="./about" class="text-slate-300 hover:text-white hover:bg-slate-700/60 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200">About</a>
-        <a routerLink="./work" class="text-slate-300 hover:text-white hover:bg-slate-700/60 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200">Work</a>
-        <a routerLink="./education" class="text-slate-300 hover:text-white hover:bg-slate-700/60 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200">Education</a>
-        <a routerLink="./contact" class="ml-2 bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-md text-sm font-semibold transition-all duration-200 shadow-lg shadow-indigo-500/20">Contact</a>
+        <a routerLink="./home"
+           class="text-cream-400 hover:text-gold-400 hover:bg-wood-700 px-3 py-2 rounded-md text-sm font-sans font-medium transition-all duration-200">
+          Home
+        </a>
+        <a routerLink="./about"
+           class="text-cream-400 hover:text-gold-400 hover:bg-wood-700 px-3 py-2 rounded-md text-sm font-sans font-medium transition-all duration-200">
+          About
+        </a>
+        <a routerLink="./work"
+           class="text-cream-400 hover:text-gold-400 hover:bg-wood-700 px-3 py-2 rounded-md text-sm font-sans font-medium transition-all duration-200">
+          Work
+        </a>
+        <a routerLink="./education"
+           class="text-cream-400 hover:text-gold-400 hover:bg-wood-700 px-3 py-2 rounded-md text-sm font-sans font-medium transition-all duration-200">
+          Education
+        </a>
+        <!-- Velvet CTA with chrome border -->
+        <a routerLink="./contact"
+           class="ml-2 text-cream-200 font-sans font-semibold px-4 py-2 rounded-md text-sm transition-all duration-200"
+           style="background: linear-gradient(135deg, #380000, #550000); border: 1px solid rgba(200,200,200,0.28); box-shadow: 0 2px 12px rgba(85,0,0,0.4);">
+          Contact
+        </a>
       </div>
     </div>
   </div>
 </nav>
 
-<!-- Main content -->
-<div class="pt-16 min-h-screen bg-slate-900">
+<!-- Main content — dark walnut background -->
+<div class="pt-16 min-h-screen" style="background-color: #252422;">
   <router-outlet></router-outlet>
 </div>
