@@ -2,27 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 6px;
-}
-::-webkit-scrollbar-track {
-  background: #0f172a;
-}
-::-webkit-scrollbar-thumb {
-  background: #4f46e5;
-  border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #6366f1;
+@layer base {
+  body {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    background-color: #252422;
+    color: #F0E6D3;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
 }
 
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
+/* ─── Scrollbar ──────────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: #161514; }
+::-webkit-scrollbar-thumb { background: #550000; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #DAA520; }
+
+/* ─── Smooth scroll ──────────────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+/* ─── Active router link ─────────────────────────────────────── */
+a.active-link { color: #DAA520; }
+
+/* ─── Subtle brushed-metal texture overlay ───────────────────── */
+.wood-texture {
+  background-image:
+    repeating-linear-gradient(
+      88deg,
+      transparent,
+      transparent 4px,
+      rgba(255, 255, 255, 0.015) 4px,
+      rgba(255, 255, 255, 0.015) 6px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 30px,
+      rgba(200, 195, 188, 0.03) 30px,
+      rgba(200, 195, 188, 0.03) 32px
+    );
 }
 
-/* Router active link */
-a.active-link {
-  color: #818cf8;
+/* ─── Venetian blind stripe (used as section divider) ────────── */
+.venetian {
+  background: repeating-linear-gradient(
+    180deg,
+    rgba(200, 200, 200, 0.22) 0px,
+    rgba(200, 200, 200, 0.22) 3px,
+    transparent 3px,
+    transparent 9px
+  );
+  height: 36px;
+}
+
+/* ─── Gold shimmer heading text ──────────────────────────────── */
+.gold-text {
+  background: linear-gradient(120deg, #B8860B 0%, #DAA520 30%, #F0D068 50%, #DAA520 70%, #B8860B 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 5s linear infinite;
+}
+
+@keyframes shimmer {
+  to { background-position: 200% center; }
+}
+
+/* ─── Retro card base ────────────────────────────────────────── */
+.retro-card {
+  background: linear-gradient(145deg, rgba(37, 36, 34, 0.98), rgba(48, 47, 45, 0.9));
+  border: 1px solid rgba(107, 64, 34, 0.4);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.retro-card:hover {
+  border-color: rgba(218, 165, 32, 0.45);
+  box-shadow: 0 8px 32px rgba(218, 165, 32, 0.08), 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* ─── Chrome-effect tag pills ────────────────────────────────── */
+.chrome-tag {
+  background: linear-gradient(135deg, rgba(48, 47, 45, 0.95), rgba(37, 36, 34, 0.95));
+  border: 1px solid rgba(200, 200, 200, 0.18);
+  color: #C0BDBA;
+}
+
+/* ─── Warm amber glow on icon containers ─────────────────────── */
+.amber-icon-bg {
+  background: rgba(184, 134, 11, 0.15);
+}
+.amber-icon-bg:hover {
+  background: rgba(218, 165, 32, 0.25);
 }

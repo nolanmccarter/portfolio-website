@@ -1,48 +1,60 @@
-<!-- About -->
-<div class="min-h-screen bg-slate-900 py-20 px-4">
+<!-- About — warm wood-paneled lounge -->
+<div class="min-h-screen py-20 px-4 wood-texture" style="background-color: #252422;">
   <div class="max-w-5xl mx-auto">
 
     <!-- Section header -->
     <div class="mb-14 text-center">
-      <h1 class="text-4xl sm:text-5xl font-bold text-white mb-4">About Me</h1>
-      <div class="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto rounded-full"></div>
+      <h1 class="font-serif text-4xl sm:text-5xl font-bold text-cream-100 mb-4">About Me</h1>
+      <!-- Gold venetian divider -->
+      <div class="w-24 mx-auto" style="height: 3px; background: linear-gradient(90deg, transparent, #DAA520, transparent);"></div>
     </div>
 
-    <!-- Bio -->
-    <div class="space-y-4 text-slate-300 text-lg leading-relaxed mb-16 max-w-3xl mx-auto">
-      <p>I am currently employed at Financial Information Technologies LLC, aka "Fintech" as a Technical Product Owner. I have been with the company since March 2023 and have quickly grown into a confident Data Engineering role.</p>
-      <p>I oversee collect, ingest, process, harmonize, and publish workflows across our data platform—including over 150 data collection points spanning depletion, shipment, inventory, and invoice datasets.</p>
-      <p>I am a Fall 2022 graduate from the University of Miami with a Bachelor of Science in Computer Science on the Data Science Track and a minor in Mathematics.</p>
-      <p>In 2021 and 2022 I worked as a Software Engineering summer intern at Thermo Fisher Scientific, gaining first-hand exposure to industry software development.</p>
-      <p>At the University of Miami I was Vice President of Recruitment for the Inter Fraternity Council, an AP Computer Science A Tutor in Java, and an active member of the Data Analytics Student Association.</p>
-      <p>Outside of work I enjoy collecting records, lifting, cooking, soccer, golf, skiing, traveling, and spending time with family and friends.</p>
+    <!-- Bio — set on a warm walnut card -->
+    <div class="retro-card rounded-xl p-8 mb-12">
+      <div class="space-y-4 text-cream-400 text-lg leading-relaxed font-sans">
+        <p>I'm a Technical Product Owner and Data Engineer at Financial Information Technologies (Fintech), where I've built and scaled a data platform that touches every corner of the beverage alcohol industry's supply chain.</p>
+        <p>Since joining in March 2023, I've grown from building ELT pipelines to owning the full product lifecycle — driving roadmap decisions, leading Agile ceremonies, and aligning engineering work to business outcomes across depletion, shipment, inventory, and invoice datasets.</p>
+        <p>I graduated Cum Laude from the University of Miami in December 2022 with a B.S. in Computer Science (Data Science Track) and a minor in Mathematics, earning a 3.85 GPA and six Provost's Honor Roll distinctions.</p>
+        <p>Before Fintech, I spent two summers at Thermo Fisher Scientific as a Software Engineering Intern, where I built production Java applications and got my first real taste of enterprise SDLC.</p>
+        <p>On campus I was VP of Recruitment for the Inter Fraternity Council, a Java tutor, and an active member of the Data Analytics Student Association.</p>
+        <p>Outside of work you'll find me collecting records, on the golf course, skiing, cooking, or spending time with family and friends.</p>
+      </div>
     </div>
 
-    <!-- Photo grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
-      <div class="group overflow-hidden rounded-xl border border-slate-700 hover:border-indigo-500/60 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/10">
-        <img src="assets/Family.JPG" alt="Family" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
-        <div class="p-3 bg-slate-800/60 text-center">
-          <p class="text-slate-400 text-sm">Family</p>
+    <!-- Venetian blind divider -->
+    <div class="venetian w-full mb-12 rounded-sm opacity-70"></div>
+
+    <!-- Photo grid — framed like display vitrines -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-14">
+      <div class="group overflow-hidden rounded-xl transition-all duration-300"
+           style="border: 1px solid rgba(200,200,200,0.18); box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+        <img src="assets/Family.JPG" alt="Family"
+             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-3 text-center" style="background: rgba(48,47,45,0.97);">
+          <p class="text-cream-500 text-sm font-sans tracking-wider uppercase">Family</p>
         </div>
       </div>
-      <div class="group overflow-hidden rounded-xl border border-slate-700 hover:border-indigo-500/60 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/10">
-        <img src="assets/Golf.JPG" alt="Golf" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
-        <div class="p-3 bg-slate-800/60 text-center">
-          <p class="text-slate-400 text-sm">Golf</p>
+      <div class="group overflow-hidden rounded-xl transition-all duration-300"
+           style="border: 1px solid rgba(200,200,200,0.18); box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+        <img src="assets/Golf.JPG" alt="Golf"
+             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-3 text-center" style="background: rgba(48,47,45,0.97);">
+          <p class="text-cream-500 text-sm font-sans tracking-wider uppercase">Golf</p>
         </div>
       </div>
-      <div class="group overflow-hidden rounded-xl border border-slate-700 hover:border-indigo-500/60 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/10">
-        <img src="assets/Ski.JPG" alt="Skiing" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
-        <div class="p-3 bg-slate-800/60 text-center">
-          <p class="text-slate-400 text-sm">Skiing</p>
+      <div class="group overflow-hidden rounded-xl transition-all duration-300"
+           style="border: 1px solid rgba(200,200,200,0.18); box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+        <img src="assets/Ski.JPG" alt="Skiing"
+             class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="p-3 text-center" style="background: rgba(48,47,45,0.97);">
+          <p class="text-cream-500 text-sm font-sans tracking-wider uppercase">Skiing</p>
         </div>
       </div>
     </div>
 
     <!-- Next link -->
     <div class="text-center">
-      <a routerLink="/work" class="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors duration-200 font-medium">
+      <a routerLink="/work" class="inline-flex items-center gap-2 text-gold-600 hover:text-gold-400 transition-colors duration-200 font-sans font-medium">
         Check out my work experience
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
